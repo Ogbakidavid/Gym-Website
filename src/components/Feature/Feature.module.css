@@ -1,0 +1,81 @@
+.Container {
+    color: #000;
+    margin: 120px 0;
+    padding: 0 8%;
+    position: relative;
+    overflow: hidden;
+}
+
+.Container p {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #f9032f;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-family: "Roboto Mono";
+}
+
+.Container h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 30px;
+    font-family: "Syncopate";
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.contentContainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 10rem;
+}
+
+.content {
+    flex: 1;
+}
+
+.contentImg {
+    flex: 1;
+}
+
+.contentImg img {
+    width: 480px;
+    height: 450px;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+@media (max-width: 930px) {
+    .contentContainer {
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .featuresContainer h1 {
+        font-size: 2.5rem;
+    }
+
+    .contentImg img {
+        width: 300px;
+        height: 285px;
+    }
+}
+
+@media (max-width: 320px) {
+.Container h1 {
+    font-size: 2rem;
+    line-height: 50px;
+}
+
+.Container p {
+    margin-bottom: 0.4rem;
+}
+
+.contentImg img {
+    width: 200px;
+    height: auto;
+}
+}

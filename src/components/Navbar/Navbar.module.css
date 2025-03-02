@@ -1,0 +1,146 @@
+.navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 21px;
+    padding-bottom: 10px;
+    padding-left: 8%;
+    padding-right: 8%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    background: #131313;
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbarLogo {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Syncopate";
+    letter-spacing: 20px;
+}
+
+.navbarLogo span {
+    color: #f9032f;
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: "Syncopate";
+}
+
+.menu {
+    display: flex;
+}
+
+.menuItems {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+}
+
+.menuItems li {
+    list-style: none;
+}
+
+.menuItems li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.menuItems li a:hover{
+    color: #f9032f;
+    transition: .6s ease;
+}
+
+.menuBtn {
+    display: none;
+}
+
+@media (max-width: 930px) {
+    .overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0 0 0 / 80%);
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.4s ease-in-out;
+    z-index: 0;
+}
+
+.menuBtn {
+    display: block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    z-index: 105;
+    background: #f9032f;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+}
+
+.menu {
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    align-items: flex-end;
+    padding-right: 8%;
+    gap: 10px;
+}
+
+.menuItems {
+    display: none;
+    position: fixed;
+    top: -100;
+    right: 0;
+    width: 100%;
+    background: #161616;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.45);
+    height: 70vh;
+    transition: top 0.6s ease;
+}
+
+.isOpen {
+       display: flex;
+    top: 0;
+    z-index: 1;
+    transition: top 0.6s ease;
+}
+
+.menuItems a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.menuItems li a:hover::after {
+    opacity: 0;
+}
+
+.menuItems li a:hover {
+    color: #f9032f;
+    transition: 0.5s ease;
+}
+}

@@ -1,0 +1,55 @@
+.plansContainer {
+    background: #000;
+    padding-block: 120px;
+    padding-inline: 8%;
+    overflow: hidden;
+}
+
+.plansContainer h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: "Syncopate";
+    text-transform: uppercase;
+}
+
+.plansContainer h5 {
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+.contentContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+@media (max-width: 1124px) {
+    .content {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 930px) {
+    .content {
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .plansContainer h1 {
+        font-size: 2rem;
+    }
+}
