@@ -26,7 +26,7 @@ const Feature = () => {
                     </div>
 
                     <div className={styles.contentImg}>
-                        <img src='/src/assets/image/img11.png' alt="gym center" />
+                        <img src='/public/assets/images/img11.png' alt="gym center" />
                     </div>
                 </div>
             </motion.div>

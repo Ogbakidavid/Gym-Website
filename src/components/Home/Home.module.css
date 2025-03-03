@@ -6,7 +6,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('/src/assets/image/image1.png');
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('/public/assets/images/image1.png');
     background-size: cover;
     background-position: center;
     overflow: hidden;
