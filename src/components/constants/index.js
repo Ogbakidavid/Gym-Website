@@ -26,7 +26,7 @@ export const Features = [
     },
     {
         title: "circle check 6",
-        icon: "/public/assets/images/img01.png",
+        icon: "/assets/images/img01.png",
         text: "Open 24/7",
     },
 ];
